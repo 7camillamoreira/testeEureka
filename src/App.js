@@ -49,7 +49,7 @@ export default function App() {
         <ul>
           {favoritos.map(favorito => (
             <li key={favorito.id + 'favorito'}>
-              <img src={favorito.image} />
+              <img src={favorito.image} alt="foto de um personagem da sereie Rick and Morty"/>
               <h3>{favorito.name}</h3>
               <button onClick={() => handleRemoveFavorite(favorito.id)}>Remover</button>
             </li>
