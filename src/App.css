@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #111111;
+    color: white;
+}
+
+li {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 100px 1fr 50px;
+    grid-gap: 30px;
+    width: 500px;
+    margin-bottom: 50px;
+    padding: 30px;
+    border-radius: 18px;
+    align-items: center;
+    border: 2px solid white;
+}
+
+li img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+img {
+    object-fit: cover;
+    object-position: top;
+}
+
+.divisoria{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 50px;
+}
+
+button {
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
