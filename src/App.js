@@ -6,11 +6,13 @@ export default function App() {
   const [personagens, setPersonagens] = useState([])
   const [favoritos, setFavoritos] = useState([])
 
-  useEffect(async () => {
-    const response = await fetch('https://rickandmortyapi.com/api/character')
-    const data = await response.json();
-
-    setPersonagens(data.results);
+  useEffect(() => {
+    async function fechData() {
+      const response = await fetch('https://rickandmortyapi.com/api/character')
+      const data = await response.json();
+      setPersonagens(data.results);
+    }
+    fechData()
   }, []);
 
   useEffect(() => {
