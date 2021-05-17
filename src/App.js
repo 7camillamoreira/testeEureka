@@ -35,7 +35,7 @@ export default function App() {
 
   return (
     <>
-      <img src={Imagem} width="100%" height="auto" />
+      <img src={Imagem} width="100%" height="auto" alt="imagem de capa do Rick and Morty"/>
       <div className="divisoria">
         <ul>
           {personagens.map(personagem => (
